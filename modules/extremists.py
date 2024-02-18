@@ -11,7 +11,7 @@ class Extremist:
         'запрещена'
     ]
 
-    def __init__(self, *names: str, types: list[int]):
+    def __init__(self, *names: str, types: list[int], is_human: bool=False):
         self.name = names[0]
         self.var = [name.lower() for name in names]
         self.types = types
